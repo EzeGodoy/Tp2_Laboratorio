@@ -105,18 +105,18 @@ int borrar(EPersona registro[])
     {
         if(registro[i].dni==borrar)
         {
-            printf("\nEsta a punto de borrar a %s. Desea continuar? (s/n)\n\n",registro[i].nombre);
+            printf("\nEsta a punto de borrar a %s. Desea continuar? (Digite s=si o n=no)\n\n",registro[i].nombre);
             pregunta=getche();
-            printf("La persona fue borrada exitosamente\n\n");
 
             if(pregunta == 's')
             {
                 registro[i].estado=0;
+                printf("\n\nLa persona fue borrada exitosamente\n\n");
             }
 
             else
             {
-                printf("\nLa persona no fue borrada\n");
+                printf("\n\nLa persona no fue borrada\n\n");
             }
 
             bandera=1;
